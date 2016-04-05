@@ -2,5 +2,6 @@ package Viwer
 
 class UserController {
 
-    def index() { }
+    static scaffold = User
+
 }

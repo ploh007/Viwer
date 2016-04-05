@@ -2,5 +2,5 @@ package Viwer
 
 class PersonController {
 
-    def index() { }
+    static scaffold = Person
 }

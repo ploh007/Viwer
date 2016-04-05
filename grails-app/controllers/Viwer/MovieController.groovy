@@ -2,5 +2,5 @@ package Viwer
 
 class MovieController {
 
-    def index() { }
+    static scaffold = Movie
 }
