@@ -233,6 +233,10 @@
     <div class="col-md-5" id="search_movie">
         <h2 id="search_movie_title">Search Title #1</h2>
         <img src="assets/img/whatsnew_1.jpg">
+        <div class="row">
+            <button class="btn custom_search_button" data-toggle="modal" data-target="#ratingModal">Rate This Movie</button>
+            <button class="btn custom_search_button" data-toggle="modal" data-target="#trailerModal">View Trailer</button>
+        </div>
     </div>
     <div class="col-md-7" id="search_movie_table">
 
@@ -299,6 +303,88 @@
 
 </body>
 <!-- END BODY COMPONENT -->
+
+<!-- RATING MODAL -->
+<div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModal">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="ratingModalTitle">Rate Movie</h3>
+        </div>
+
+        <form class="form-horizontal">
+            <div class="modal-body">
+                <div class="row">
+                
+                <div class="col-md-12 signUpPromo">
+                    <h4>WHAT DID YOU THINK OF THE MOVIE?</h4>
+                </div>
+                <div class="col-md-7">
+
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="inputUserNameLabel">Rating</span>
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a rating</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>  
+                    <p>
+
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="inputUserNameLabel">Review</span>
+                        <textarea class="form-control" rows="10" cols="50"></textarea>
+                    </div>
+
+
+                    <div class="ratingFeedback">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Rate!</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+<!-- END RATING MODAL -->
+
+
+<!-- RATING MODAL -->
+<div class="modal fade" id="trailerModal" tabindex="-1" role="dialog" aria-labelledby="trailerModal">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="trailerModal">Rate Movie</h3>
+        </div>
+
+        <form class="form-horizontal">
+            <div class="modal-body">
+                <h5>
+                    TRAILER CONTENT
+                </h5>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+<!-- END RATING MODAL -->
+
 
 <!-- FOOTER COMPONENT -->
 <footer>

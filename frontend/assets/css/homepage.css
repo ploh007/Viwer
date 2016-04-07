@@ -52,7 +52,6 @@ footer {
 }
 #parallelogram-holder {
     width: 120%;
-    overflow: hidden;
 }
 
 .parallelogram::before {
@@ -122,6 +121,7 @@ footer {
     background-color: #000 ;
     color: #fff;
     text-align: left;
+        overflow: hidden;
 }
 
 #features_jumbotron {

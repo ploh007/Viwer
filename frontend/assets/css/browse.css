@@ -33,7 +33,7 @@ body {
 	width: 100%;
 	margin: 5px;
 	transition: 0.75s;
-	border: 2px solid #000;
+	border: 3px solid #000;
 	margin-bottom: 5px;
 	margin-top: 20px;
 	animation: fadeInUp 1.5s;
@@ -44,7 +44,7 @@ body {
 }
 
 #recommended_movie_image:hover {
-	border: 2px solid #f58b00;
+	border: 3px solid #f58b00;
 }
 
 #recommended_movie_title {
@@ -62,10 +62,35 @@ body {
 	border: none;
 }
 
-.custom_search_button:hover, .custom_search_button:active {
+.custom_search_button:hover {
 	background-color: #FF3D00;
 	color: #fff;
 	border: none;
+}
+.custom_search_button:focus {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+
+.custom_search_button:active {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+.custom_search_button:visited {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+
+.custom_search_button:link {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+.input-group-addon{
+    vertical-align:top;
 }
 
 td,th {
