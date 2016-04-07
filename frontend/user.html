@@ -1,0 +1,219 @@
+<html lang="en">
+
+<!-- HEAD COMPONENT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Viwer | User</title>
+
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/homepage.css" rel="stylesheet">
+    <link href="assets/css/browse.css" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+<!-- END HEAD COMPONENT -->
+
+
+<!-- BODY COMPONENT -->
+<body>
+
+
+<!-- NAVBAR COMPONENT -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VIWER</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Locations</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> About</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR COMPONENT -->
+
+<!-- MAINJUMBOTRON COMPONENT -->
+<div class="jumbotron" id="browse_jumbotron">
+    <div class="container" >
+
+    <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Joshua </h3>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Recommended</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Search</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="panel-body">
+                <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_1.jpg">
+                    <div id="recommended_movie_text">Recommended1</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_2.jpg">
+                    <div id="recommended_movie_text">Recommended2</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_3.jpg">
+                    <div id="recommended_movie_text">Recommended3</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_4.jpg">
+                    <div id="recommended_movie_text">Recommended4</div>
+                </div>
+                 <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_5.jpg">
+                    <div id="recommended_movie_text">Recommended5</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <img src="assets/img/whatsnew_6.jpg">
+                    <div id="recommended_movie_text">Recommended6</div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="panel-body">
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="exampleInputName2" class="col-sm-2 control-label">Movie Title </label>
+                                <div class="col-sm-5">
+                                <select class="form-control" id="sel1">
+                                    <option selected disabled>Select a movie</option>
+                                    <option>Sherlock Holmes</option>
+                                    <option>Captain America : Civil War</option>
+                                    <option>The Dark Knight</option>
+                                    <option>Nacho Libre</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputName2" class="col-sm-2 control-label">Movie Genre </label>
+                                <div class="col-sm-5">
+                                    <select class="form-control" id="sel1">
+                                        <option selected disabled>Select a genre</option>
+                                        <option>Comedy</option>
+                                        <option>Horror</option>
+                                        <option>Action</option>
+                                        <option>Documentary</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-3">
+                                    <button type="submit" class="btn btn-primary">Search Movie Database</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            
+        </div>
+      </div>
+
+
+
+
+    </div>
+</div>
+<!-- END MAINJUMBOTRON COMPONENT -->
+
+<!-- DISPLAY USER REQUESTED DATA -->
+<div class="container" >
+    <div class="col-md-5" id="search_movie">
+        <h2 id="search_movie_title">Search Title #1</h2>
+        <img src="assets/img/whatsnew_1.jpg">
+    </div>
+    <div class="col-md-7" id="search_movie_table">
+        <h2 id="search_movie_tabletitle">Casts</h2>
+        
+        <table class="table">
+            <thead> <tr> <th>Name</th> <th>Role</th></tr> </thead> 
+            <tbody> 
+                <tr>
+                    <td>Actor Name #1</td>
+                    <td>Role #1</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #2</td>
+                    <td>Role #2</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #3</td>
+                    <td>Role #3</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #4</td>
+                    <td>Role #4</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #5</td>
+                    <td>Role #5</td>
+                </tr> 
+            </tbody> 
+        </table>
+
+    </div>
+</div>
+
+</body>
+<!-- END BODY COMPONENT -->
+
+<!-- FOOTER COMPONENT -->
+<footer>
+    <div> CSI 2132 © 2016. Joshua Saunders || Paul Loh </div>
+    <!-- <div id="scroll-top">Go To Top</div> -->
+</footer>
+<!-- END FOOTER COMPONENT -->
+
+</html>
+
+<!-- JS SCRIPTS -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>

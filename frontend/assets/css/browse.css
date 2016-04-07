@@ -1,0 +1,36 @@
+#browse_jumbotron {   
+	background-color: #000 ;
+    color: #fff;
+    text-align: left;
+    min-height: 300px;
+}
+
+#search_movie {
+	text-align: center;
+}
+
+#search_movie img {
+	width: 250px;
+	margin: 10px;
+}
+#search_movie_title {
+	text-align: center;
+}
+
+#recommended_movie {
+	text-align: center;
+	width: 170px;
+	margin: 5px;
+}
+
+#recommended_movie img {
+	width: 140px;
+	margin-bottom: 10px;
+}
+#recommended_movie_title {
+	text-align: center;
+}
+
+td,th {
+	text-align: center;
+}
