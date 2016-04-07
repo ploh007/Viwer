@@ -69,87 +69,152 @@
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Recommended</a></li>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Search</a></li>
-        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Recommended</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home">
-            <div class="panel-body">
+                <h3 class="panel_description">Recommended movies for you</h3>
                 <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_1.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_1.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended1</div>
                 </div>
 
                 <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_2.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_2.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended2</div>
                 </div>
 
                 <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_3.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_3.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended3</div>
                 </div>
 
                 <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_4.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_4.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended4</div>
                 </div>
                  <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_5.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_5.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended5</div>
                 </div>
 
                 <div class="col-md-2" id="recommended_movie">
-                    <img src="assets/img/whatsnew_6.jpg">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_6.jpg">
+                    </div>
                     <div id="recommended_movie_text">Recommended6</div>
                 </div>
-            </div>
         </div>
+
         <div role="tabpanel" class="tab-pane" id="profile">
-            
-        </div>
-        <div role="tabpanel" class="tab-pane" id="messages">
-                    <div class="panel-body">
-                        <form class="form-horizontal">
 
-                            <div class="form-group">
-                                <label for="exampleInputName2" class="col-sm-2 control-label">Movie Title </label>
-                                <div class="col-sm-5">
-                                <select class="form-control" id="sel1">
-                                    <option selected disabled>Select a movie</option>
-                                    <option>Sherlock Holmes</option>
-                                    <option>Captain America : Civil War</option>
-                                    <option>The Dark Knight</option>
-                                    <option>Nacho Libre</option>
-                                </select>
-                                </div>
-                            </div>
+            <h3 class="panel_description">My Profile Reports</h3>
 
-                            <div class="form-group">
-                                <label for="exampleInputName2" class="col-sm-2 control-label">Movie Genre </label>
-                                <div class="col-sm-5">
-                                    <select class="form-control" id="sel1">
-                                        <option selected disabled>Select a genre</option>
-                                        <option>Comedy</option>
-                                        <option>Horror</option>
-                                        <option>Action</option>
-                                        <option>Documentary</option>
-                                    </select>
-                                </div>
-                            </div>
+            <form class="form-horizontal">
 
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-3">
-                                    <button type="submit" class="btn btn-primary">Search Movie Database</button>
-                                </div>
-                            </div>
-                            
-                        </form>
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Search Reports </label>
+                        <div class="col-sm-5">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a report</option>
+                            <option>My Rated Movies</option>
+                            <option>My Most Rated Movies</option>
+                            <option>My Profile Information</option>
+                        </select>
+                        </div>
                     </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary custom_search_button">Search My Reports</button>
+                        </div>
+                    </div>
+                    
+                </form>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <h3 class="panel_description">Search Across our movies database</h3>
+            <div class="panel-body">
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Title </label>
+                        <div class="col-sm-5">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a movie</option>
+                            <option>Sherlock Holmes</option>
+                            <option>Captain America : Civil War</option>
+                            <option>The Dark Knight</option>
+                            <option>Nacho Libre</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Genre </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a genre</option>
+                                <option>Comedy</option>
+                                <option>Horror</option>
+                                <option>Action</option>
+                                <option>Documentary</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Rating </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a rating</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Year </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a year</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-3">
+                            <button type="submit" class="btn btn-primary custom_search_button">Search Movie Database</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="settings">
             
@@ -164,15 +229,46 @@
 <!-- END MAINJUMBOTRON COMPONENT -->
 
 <!-- DISPLAY USER REQUESTED DATA -->
-<div class="container" >
+<div class="container" id="search_results">
     <div class="col-md-5" id="search_movie">
         <h2 id="search_movie_title">Search Title #1</h2>
         <img src="assets/img/whatsnew_1.jpg">
     </div>
     <div class="col-md-7" id="search_movie_table">
+
+        <h2 id="search_movie_tabletitle2">Movie Details</h2>
+        
+        <table class="table table-hover">
+            <tbody> 
+                
+                <tr>
+                    <td>Released On</td>
+                    <td>Released Date</td>
+                </tr> 
+                <tr>
+                    <td>Directed By</td>
+                    <td>Director #1</td>
+                </tr> 
+                <tr>
+                    <td>Produced By</td>
+                    <td>Production Studio #1</td>
+                </tr> 
+                <tr>
+                    <td>Ratings</td>
+                    <td>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        (94)
+                    </td>
+                </tr> 
+            </tbody> 
+        </table>
+
         <h2 id="search_movie_tabletitle">Casts</h2>
         
-        <table class="table">
+        <table class="table table-hover">
             <thead> <tr> <th>Name</th> <th>Role</th></tr> </thead> 
             <tbody> 
                 <tr>
