@@ -1,6 +1,6 @@
 package Viwer
 
-class User {
+class ViwerUser {
 
     String firstName
     String lastName
