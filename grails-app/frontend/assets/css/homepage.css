@@ -1,0 +1,218 @@
+/**============================
+* @author Paul Loh
+* @author Joshua Saunders
+============================**/
+
+/** ============================
+    DEFAUTL HTML TAGS
+============================ **/
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    font-size: 13px;
+}
+
+table {
+    font-size: 13px;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    color: #757575;
+
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+.parallelogram {
+/*    background-image: url("../img/whatsnew_1.jpg");*/
+    /*background-size: cover;*/
+    width: 180px;
+    height: 250px;
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+    float:left;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 5px solid #f58b00;
+    transition: 0.25s;
+
+    /* new styles */
+    position: relative;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+
+}
+#parallelogram-holder {
+    width: 120%;
+}
+
+.parallelogram::before {
+    content: "";
+    transform: skewX(20deg); 
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg) translateX(-100px); /* Safari and Chrome */
+    background-image: url("../img/whatsnew_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: top left; 
+    
+    /* new styles */
+    position: absolute;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 500px; /* something ridiculously big */
+    height: 500px; /* something ridiculously big */
+}
+
+.parallelogram:hover {
+/*    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);*/
+    border: 5px solid #f58b00;
+    background-color: #f58b00;
+}
+
+.whats_new {
+    overflow: hidden;
+    height: 350px;
+}
+
+.signUpPromo{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    background-color: #f58b00;
+    color: #fff;
+}
+
+.modal-header {
+    background-color: #f58b00;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/** ============================
+    BOOTSTRAP OVERRIDE CSS
+============================ **/
+
+/* Jumbotrons */
+.jumbotron {
+    margin: 0px;
+    text-align: center;
+}
+
+#promo_jumbotron {
+    background-color: #000 ;
+    color: #fff;
+    text-align: left;
+        overflow: hidden;
+}
+
+#features_jumbotron {
+    font-weight: bold;
+    background-color: #f58b00;
+    color: #000;
+    animation: fadeInDown 0.75s;
+    background-image: url("../img/net.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+.custom-btn {
+    background-color:#B71C1C;
+    color: #fff;
+    transition: .5s; 
+    font-size: 18px;
+}
+
+.custom-btn:hover {
+    background-color:#2E7D32;
+    color: #fff;
+}
+
+
+.feature-description {
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feature-heading {
+    background-color: #000;
+    color: #f58b00;
+    margin: 20px;
+}
+
+.feature-image {
+    width:200px;
+    height: 100px;
+    margin: auto;
+    text-align:center;
+    padding: 5px;
+
+}
+
+.feature-image-helper {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+
+.feature-image img{
+    width:80px;
+    vertical-align: middle;
+}
+
+.feature_rate {
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 5px double #000;
+    border-radius: 10px;
+
+}
+
+.feature-highlight {
+    border: 2px solid #000;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-weight: 900;
+
+}
+
+.feature-highlight:hover {
+    color: #000;
+}
+
+.feature-highlight-holder {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Responsive UI Controls */
+@media (min-width: 768px) {
+
+    .parallelogram {
+    }
+}

@@ -1,0 +1,110 @@
+#browse_jumbotron {   
+	background-color: #000 ;
+    color: #fff;
+    text-align: left;
+    min-height: 540px;
+    border-bottom: 5px solid #f58b00;
+}
+
+#search_results {
+	/*background-color: #f58b00; */
+}
+body {
+	background-color: #fff; 
+}
+
+#search_movie {
+	text-align: center;
+}
+
+#search_movie img {
+	width: 250px;
+	margin: 10px;
+}
+#search_movie_title {
+	text-align: center;
+}
+
+#recommended_movie {
+	text-align: center;
+}
+
+#recommended_movie_image {
+	width: 100%;
+	margin: 5px;
+	transition: 0.75s;
+	border: 3px solid #000;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	animation: fadeInUp 1.5s;
+}
+
+#recommended_movie_image img {
+	width: 100%;
+}
+
+#recommended_movie_image:hover {
+	border: 3px solid #f58b00;
+}
+
+#recommended_movie_title {
+	text-align: center;
+}
+
+.panel_description {
+	animation: fadeInLeft 0.5s;
+	text-transform: uppercase;
+}
+
+.custom_search_button {
+	background-color: #f58b00;
+	color: #000;
+	border: none;
+}
+
+.custom_search_button:hover {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+.custom_search_button:focus {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+
+.custom_search_button:active {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+.custom_search_button:visited {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+
+.custom_search_button:link {
+	background-color: #FF3D00;
+	color: #fff;
+	border: none;
+}
+.input-group-addon{
+    vertical-align:top;
+}
+
+td,th {
+	text-align: center;
+}
+
+a, a:hover {
+	color: #f58b00;
+}
+
+table {
+	table-layout: fixed;
+}
+
+#search_results {
+	animation: fadeInDown 0.5s;
+}
