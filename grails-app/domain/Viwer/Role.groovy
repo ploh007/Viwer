@@ -4,6 +4,7 @@ class Role {
 
     public static final String ACTOR = "actor"
     public static final String PRODUCER = "producer"
+    public static final String DIRECTOR = "director"
 
     Person person
     String roleName //producer, etc.

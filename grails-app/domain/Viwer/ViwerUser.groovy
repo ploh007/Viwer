@@ -3,6 +3,8 @@ package Viwer
 class ViwerUser {
 
     String username
+    String name
+    String email
     String password
     String ageRange
     List<Movie> history = []
