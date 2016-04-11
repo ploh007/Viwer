@@ -6,6 +6,11 @@
     border-bottom: 5px solid #f58b00;
 }
 
+#searchResultsList {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #search_results {
 	/*background-color: #f58b00; */
 }
