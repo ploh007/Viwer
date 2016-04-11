@@ -2,8 +2,13 @@
 	background-color: #000 ;
     color: #fff;
     text-align: left;
-    min-height: 540px;
+    min-height: 600px;
     border-bottom: 5px solid #f58b00;
+}
+
+#searchResultsList {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #search_results {
@@ -17,37 +22,46 @@ body {
 	text-align: center;
 }
 
-#search_movie img {
-	width: 250px;
-	margin: 10px;
+.search_movie_imgholder {
+	width: 200px;
+	height: 300px;
+	overflow: hidden;
+	margin: 5px auto;
 }
+
+.search_movie_imgholder img {
+	width: 100%;
+}
+
 #search_movie_title {
 	text-align: center;
 }
 
-#recommended_movie {
+.recommended_movie {
 	text-align: center;
 }
 
-#recommended_movie_image {
+.recommended_movie_image {
 	width: 100%;
+	height: 180px;
 	margin: 5px;
 	transition: 0.75s;
 	border: 3px solid #000;
 	margin-bottom: 5px;
 	margin-top: 20px;
 	animation: fadeInUp 1.5s;
+	overflow: hidden;
 }
 
-#recommended_movie_image img {
+.recommended_movie_image img {
 	width: 100%;
 }
 
-#recommended_movie_image:hover {
+.recommended_movie_image:hover {
 	border: 3px solid #f58b00;
 }
 
-#recommended_movie_title {
+.recommended_movie_title {
 	text-align: center;
 }
 

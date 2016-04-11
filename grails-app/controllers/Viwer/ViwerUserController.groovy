@@ -7,4 +7,7 @@ class ViwerUserController {
 
     static scaffold = ViwerUser
 
+    def signUp() {
+        render(text: params)
+    }
 }

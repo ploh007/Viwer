@@ -29,29 +29,31 @@ footer {
 }
 
 .parallelogram {
-/*    background-image: url("../img/whatsnew_1.jpg");*/
-    /*background-size: cover;*/
-    width: 180px;
-    height: 250px;
+    min-width: 200px;
+    min-height: 300px;
     -webkit-transform: skew(-20deg);
        -moz-transform: skew(-20deg);
          -o-transform: skew(-20deg);
-    float:left;
-    margin-left: 2px;
-    margin-right: 2px;
     border: 5px solid #f58b00;
     transition: 0.25s;
+    display: inline-block;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+
 
     /* new styles */
     position: relative;
     overflow: hidden;
-    -webkit-transform-origin: top left;
+/*    -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
-    transform-origin: top left;
+    transform-origin: top left;*/
 
 }
 #parallelogram-holder {
-    width: 120%;
+    /* causes .float-wrap's height to match its child divs */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .parallelogram::before {
@@ -59,26 +61,37 @@ footer {
     transform: skewX(20deg); 
     -ms-transform: skewX(20deg); /* IE 9 */
     -webkit-transform: skewX(20deg) translateX(-100px); /* Safari and Chrome */
-    background-image: url("../../images/paul/whatsnew_1.jpg");
+    background-image: url("../../images/paul/movie_posters/antman.jpg");
     background-size: contain;
     background-repeat: no-repeat; 
-    background-position: top left; 
+    background-position: top left;
+        display: inline-block;
     
     /* new styles */
     position: absolute;
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left;
-    width: 500px; /* something ridiculously big */
-    height: 500px; /* something ridiculously big */
+    width: 500px; 
+    height: 500px; 
 }
 
 .parallelogram:hover {
-/*    -webkit-transform: skew(-15deg);
-    -moz-transform: skew(-15deg);
-    -o-transform: skew(-15deg);*/
     border: 5px solid #f58b00;
     background-color: #f58b00;
+}
+
+.outer {
+    overflow: hidden;
+    height: 300px;
+    width: auto;
+    margin: 0 auto;
+   
+}
+
+.carousel-inner {
+    border-left:20px double #f58b00;
+    border-right:20px double #f58b00;   
 }
 
 .whats_new {
@@ -209,6 +222,14 @@ footer {
     text-align: center;
     margin: 10px;
 }
+
+.carousel-inner > .item > #parallelogram,
+.carousel-inner > .item > a > #parallelogram {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Responsive UI Controls */
 @media (min-width: 768px) {
