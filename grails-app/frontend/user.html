@@ -1,0 +1,401 @@
+<html lang="en">
+
+<!-- HEAD COMPONENT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Viwer | User</title>
+
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/homepage.css" rel="stylesheet">
+    <link href="assets/css/browse.css" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+<!-- END HEAD COMPONENT -->
+
+
+<!-- BODY COMPONENT -->
+<body>
+
+
+<!-- NAVBAR COMPONENT -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VIWER</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Locations</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> About</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR COMPONENT -->
+
+<!-- MAINJUMBOTRON COMPONENT -->
+<div class="jumbotron" id="browse_jumbotron">
+    <div class="container" >
+
+    <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Joshua </h3>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Recommended</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+                <h3 class="panel_description">Recommended movies for you</h3>
+                <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_1.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended1</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_2.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended2</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_3.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended3</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_4.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended4</div>
+                </div>
+                 <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_5.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended5</div>
+                </div>
+
+                <div class="col-md-2" id="recommended_movie">
+                    <div id="recommended_movie_image">
+                        <img src="assets/img/whatsnew_6.jpg">
+                    </div>
+                    <div id="recommended_movie_text">Recommended6</div>
+                </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="profile">
+
+            <h3 class="panel_description">My Profile Reports</h3>
+
+            <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Search Reports </label>
+                        <div class="col-sm-5">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a report</option>
+                            <option>My Rated Movies</option>
+                            <option>My Most Rated Movies</option>
+                            <option>My Profile Information</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary custom_search_button">Search My Reports</button>
+                        </div>
+                    </div>
+                    
+                </form>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <h3 class="panel_description">Search Across our movies database</h3>
+            <div class="panel-body">
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Title </label>
+                        <div class="col-sm-5">
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a movie</option>
+                            <option>Sherlock Holmes</option>
+                            <option>Captain America : Civil War</option>
+                            <option>The Dark Knight</option>
+                            <option>Nacho Libre</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Genre </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a genre</option>
+                                <option>Comedy</option>
+                                <option>Horror</option>
+                                <option>Action</option>
+                                <option>Documentary</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Rating </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a rating</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName2" class="col-sm-2 control-label">Movie Year </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option selected disabled>Select a year</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-3">
+                            <button type="submit" class="btn btn-primary custom_search_button">Search Movie Database</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            
+        </div>
+      </div>
+
+
+
+
+    </div>
+</div>
+<!-- END MAINJUMBOTRON COMPONENT -->
+
+<!-- DISPLAY USER REQUESTED DATA -->
+<div class="container" id="search_results">
+    <div class="col-md-5" id="search_movie">
+        <h2 id="search_movie_title">Search Title #1</h2>
+        <img src="assets/img/whatsnew_1.jpg">
+        <div class="row">
+            <button class="btn custom_search_button" data-toggle="modal" data-target="#ratingModal">Rate This Movie</button>
+            <button class="btn custom_search_button" data-toggle="modal" data-target="#trailerModal">View Trailer</button>
+        </div>
+    </div>
+    <div class="col-md-7" id="search_movie_table">
+
+        <h2 id="search_movie_tabletitle2">Movie Details</h2>
+        
+        <table class="table table-hover">
+            <tbody> 
+                
+                <tr>
+                    <td>Released On</td>
+                    <td>Released Date</td>
+                </tr> 
+                <tr>
+                    <td>Directed By</td>
+                    <td>Director #1</td>
+                </tr> 
+                <tr>
+                    <td>Produced By</td>
+                    <td>Production Studio #1</td>
+                </tr> 
+                <tr>
+                    <td>Ratings</td>
+                    <td>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
+                        (94)
+                    </td>
+                </tr> 
+            </tbody> 
+        </table>
+
+        <h2 id="search_movie_tabletitle">Casts</h2>
+        
+        <table class="table table-hover">
+            <thead> <tr> <th>Name</th> <th>Role</th></tr> </thead> 
+            <tbody> 
+                <tr>
+                    <td>Actor Name #1</td>
+                    <td>Role #1</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #2</td>
+                    <td>Role #2</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #3</td>
+                    <td>Role #3</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #4</td>
+                    <td>Role #4</td>
+                </tr> 
+                <tr>
+                    <td>Actor Name #5</td>
+                    <td>Role #5</td>
+                </tr> 
+            </tbody> 
+        </table>
+
+    </div>
+</div>
+
+</body>
+<!-- END BODY COMPONENT -->
+
+<!-- RATING MODAL -->
+<div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModal">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="ratingModalTitle">Rate Movie</h3>
+        </div>
+
+        <form class="form-horizontal">
+            <div class="modal-body">
+                <div class="row">
+                
+                <div class="col-md-12 signUpPromo">
+                    <h4>WHAT DID YOU THINK OF THE MOVIE?</h4>
+                </div>
+                <div class="col-md-7">
+
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="inputUserNameLabel">Rating</span>
+                        <select class="form-control" id="sel1">
+                            <option selected disabled>Select a rating</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>  
+                    <p>
+
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="inputUserNameLabel">Review</span>
+                        <textarea class="form-control" rows="10" cols="50"></textarea>
+                    </div>
+
+
+                    <div class="ratingFeedback">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Rate!</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+<!-- END RATING MODAL -->
+
+
+<!-- RATING MODAL -->
+<div class="modal fade" id="trailerModal" tabindex="-1" role="dialog" aria-labelledby="trailerModal">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="trailerModal">Rate Movie</h3>
+        </div>
+
+        <form class="form-horizontal">
+            <div class="modal-body">
+                <h5>
+                    TRAILER CONTENT
+                </h5>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>
+<!-- END RATING MODAL -->
+
+
+<!-- FOOTER COMPONENT -->
+<footer>
+    <div> CSI 2132 © 2016. Joshua Saunders || Paul Loh </div>
+    <!-- <div id="scroll-top">Go To Top</div> -->
+</footer>
+<!-- END FOOTER COMPONENT -->
+
+</html>
+
+<!-- JS SCRIPTS -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
