@@ -50,8 +50,8 @@
         function submitRating(moviePublicId) {
 
             var $modal = $('#ratingModal'+moviePublicId);
-            var rating = $modal.find('select')[0].val();
-            var reviewText = $modal.find('textarea')[0].val();
+            var rating = $modal.find('select').find(":selected").text();
+            var reviewText = $modal.find('textarea')[0].value;
 
             $.post("/viwerUser/ajax_rateMovie", { publicId:moviePublicId, rating:rating, reviewText:reviewText }, function(data) {
                 console.log(data);

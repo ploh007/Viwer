@@ -14,8 +14,4 @@ class ViwerUser {
         password nullable: true
         ageRange nullable: true
     }
-
-    static hasMany = [
-            ratings: Review
-    ]
 }

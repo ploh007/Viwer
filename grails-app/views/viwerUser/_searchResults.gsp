@@ -70,7 +70,7 @@
                     <h3 class="modal-title" id="ratingModalTitle">Rate Movie</h3>
                 </div>
 
-                <form class="form-horizontal">
+                <form onsubmit="return false;" class="form-horizontal">
                     <div class="modal-body">
                         <div class="row">
 
@@ -105,7 +105,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button onclick="submitRating(${movie.publicId}); return false;" type="submit" class="btn btn-default">Rate!</button>
+                        <button onclick="submitRating('${movie.publicId}');" type="submit" class="btn btn-default" data-dismiss="modal">Rate!</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     </div>
                 </form>
@@ -122,14 +122,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h3 class="modal-title" id="trailerModal">Rate Movie</h3>
+                    <h3 class="modal-title" id="trailerModal">Movie Trailer</h3>
                 </div>
 
                 <form class="form-horizontal">
                     <div class="modal-body">
                         <h5>
-                            TRAILER CONTENT
                         </h5>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/${movie.trailerEmbedUrl}" frameborder="0" allowfullscreen></iframe>
                     </div>
 
                     <div class="modal-footer">

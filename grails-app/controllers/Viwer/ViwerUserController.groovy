@@ -1,10 +1,5 @@
 package Viwer
 
-import grails.converters.JSON
-
-import static org.springframework.http.HttpStatus.*
-import grails.transaction.Transactional
-
 class ViwerUserController {
 
     static scaffold = ViwerUser
@@ -13,19 +8,24 @@ class ViwerUserController {
 
         ViwerUser newUser = new ViwerUser()
 
-        newUser.setUsername(params.userName)
+        newUser.setUsername(params.username)
         newUser.setPassword(params.password)
         newUser.setName(params.name)
         newUser.setEmail(params.email)
         newUser.setAgeRange(params.ageRange)
 
-        newUser.save(flush: true)
+        newUser.save(flush: true, failOnError: true)
 
+        println(ViwerUser.findAll().size() + " users")
 
-        user(newUser)
+        session.user = newUser
+
+        redirect(action: "user")
     }
 
-    def user(ViwerUser u) {
+    def user() {
+
+        ViwerUser u = session.user
 
         def model = [:]
         model.userName = u.getName()
@@ -120,11 +120,6 @@ class ViwerUserController {
     }
 
     def ajax_rateMovie = {
-        Movie movie = Movie.findByPublicId(params.publicId)
-        Review review = new Review(movie: movie, review: params.reviewText, rating: params.rating as Integer, user: ViwerUser.findAll()[0])
-        movie.addToReviews(review)
-        review.save(flush: true)
-
-        render params
+        render "this is dumb"
     }
 }

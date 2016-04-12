@@ -5,7 +5,7 @@ class Movie {
     String publicId = ""
     String title
     String posterUrl
-    String trailerEmbedUrl
+    String trailerEmbedUrl = "Wji-BZ0oCwg"
     Date dateReleased
 
     static constraints = {
